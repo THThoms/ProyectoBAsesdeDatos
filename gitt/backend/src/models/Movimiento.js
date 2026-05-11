@@ -2,7 +2,7 @@ const { DataTypes } = require('sequelize');
 const { sequelize } = require('../config/database');
 
 const Movimiento = sequelize.define('MOVIMIENTO', {
-  ID_MOV:     { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: false },
+  ID_MOV:     { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },
   FEC_MOV:    { type: DataTypes.DATE,       allowNull: false, defaultValue: DataTypes.NOW },
   TIP_MOV:    { type: DataTypes.STRING(20), allowNull: false },
   DES_MOV:    { type: DataTypes.STRING(200) },
