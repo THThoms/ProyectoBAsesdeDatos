@@ -2,7 +2,7 @@ const { DataTypes } = require('sequelize');
 const { sequelize } = require('../config/database');
 
 const DetallePrestamo = sequelize.define('DETALLE_PRESTAMO', {
-  ID_DET_PRE:  { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: false },
+  ID_DET_PRE:  { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },
   ID_PRE:      { type: DataTypes.INTEGER, allowNull: false },
   ID_ART:      { type: DataTypes.INTEGER, allowNull: false },
   EST_ENT:     { type: DataTypes.STRING(30) },
