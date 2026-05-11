@@ -2,7 +2,7 @@ const { DataTypes } = require('sequelize');
 const { sequelize } = require('../config/database');
 
 const Mantenimiento = sequelize.define('MANTENIMIENTO', {
-  ID_MAN:  { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: false },
+  ID_MAN:  { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },
   TIP_MAN: { type: DataTypes.STRING(20), allowNull: false },
   FEC_INI: { type: DataTypes.DATE,       allowNull: false },
   FEC_FIN: { type: DataTypes.DATE },
