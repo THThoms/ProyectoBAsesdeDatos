@@ -2,7 +2,7 @@ const { DataTypes } = require('sequelize');
 const { sequelize } = require('../config/database');
 
 const Notificacion = sequelize.define('NOTIFICACION', {
-  ID_NOT:      { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: false },
+  ID_NOT:      { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },
   ASU_NOT:     { type: DataTypes.STRING(80),  allowNull: false },
   MEN_NOT:     { type: DataTypes.STRING(300), allowNull: false },
   FEC_GEN:     { type: DataTypes.DATE,        allowNull: false, defaultValue: DataTypes.NOW },
