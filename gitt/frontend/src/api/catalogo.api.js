@@ -1,5 +1,7 @@
 import api from './axios';
 
+export { listarArticulos } from './articulo.api';
+
 export const listarRoles         = () => api.get('/roles');
 export const listarCategorias    = () => api.get('/categorias');
 export const listarEstados       = () => api.get('/estados');
