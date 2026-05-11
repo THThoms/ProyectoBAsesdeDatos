@@ -2,7 +2,7 @@ const { DataTypes } = require('sequelize');
 const { sequelize } = require('../config/database');
 
 const Prestamo = sequelize.define('PRESTAMO', {
-  ID_PRE:       { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: false },
+  ID_PRE:       { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },
   FEC_PRE:      { type: DataTypes.DATE,        allowNull: false, defaultValue: DataTypes.NOW },
   FEC_DEV_PRO:  { type: DataTypes.DATE,        allowNull: false },
   FEC_DEV_REAL: { type: DataTypes.DATE },
