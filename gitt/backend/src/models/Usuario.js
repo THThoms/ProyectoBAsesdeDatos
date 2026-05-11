@@ -2,7 +2,7 @@ const { DataTypes } = require('sequelize');
 const { sequelize } = require('../config/database');
 
 const Usuario = sequelize.define('USUARIO', {
-  ID_USU:  { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: false },
+  ID_USU:  { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },
   NOM_USU: { type: DataTypes.STRING(20),  allowNull: false },
   APE_USU: { type: DataTypes.STRING(20),  allowNull: false },
   COR_USU: { type: DataTypes.STRING(40),  allowNull: false, unique: true },
