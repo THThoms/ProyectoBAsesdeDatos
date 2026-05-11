@@ -2,7 +2,7 @@ const { DataTypes } = require('sequelize');
 const { sequelize } = require('../config/database');
 
 const Articulo = sequelize.define('ARTICULO', {
-  ID_ART:  { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: false },
+  ID_ART:  { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },
   COD_BAR: { type: DataTypes.STRING(30), unique: true },
   COD_INS: { type: DataTypes.STRING(30), unique: true },
   NOM_ART: { type: DataTypes.STRING(60),  allowNull: false },
