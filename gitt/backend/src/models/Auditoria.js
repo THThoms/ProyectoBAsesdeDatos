@@ -2,7 +2,7 @@ const { DataTypes } = require('sequelize');
 const { sequelize } = require('../config/database');
 
 const Auditoria = sequelize.define('AUDITORIA', {
-  ID_AUD:     { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: false },
+  ID_AUD:     { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },
   FEC_HOR:    { type: DataTypes.DATE, allowNull: false, defaultValue: DataTypes.NOW },
   ACC_AUD:    { type: DataTypes.STRING(20), allowNull: false },
   TAB_AUD:    { type: DataTypes.STRING(30), allowNull: false },
